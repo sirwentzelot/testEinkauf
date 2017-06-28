@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+xmlns:ui="http://java.sun.com/jsf/facelets"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>Einkaufsliste</title>
+</h:head>
+<h:body>
+<h:outputLabel value="Bitte einloggen"/>
+<h:form>	
+	<h:inputText value="#{userBean.name}" id="name" />
+</h:form>	
+<h:form>
+	<h:inputSecret value="#{userBean.pw}" id="pw" />
+</h:form>
+<h:form>
+	<h:commandButton action="test" value="OK" />
+</h:form>
+</h:body>
+<h:outputText value="#{userBean.getName()}" />
+
+
+
+
+</html>
